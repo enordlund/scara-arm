@@ -1,0 +1,1564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CFD69E3F22950778F4ED36D /* Pods_RGB_Controller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EBD95429305F2E2C10F37F /* Pods_RGB_Controller.framework */; };
+		AF1EEB3D1F5A571700FE3DB2 /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1EEB3C1F5A571700FE3DB2 /* MessageHandler.swift */; };
+		AF1EEB3F1F5CD3AD00FE3DB2 /* Outbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1EEB3E1F5CD3AD00FE3DB2 /* Outbox.swift */; };
+		AF1EEB411F5F33ED00FE3DB2 /* Inbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1EEB401F5F33ED00FE3DB2 /* Inbox.swift */; };
+		AF2A7A9620DDB1BB00A1EC9B /* UserDefaultsManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A7A9520DDB1BB00A1EC9B /* UserDefaultsManagement.swift */; };
+		AF2A7A9A20DDCF4B00A1EC9B /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A7A9920DDCF4B00A1EC9B /* LaunchScreenView.swift */; };
+		AF4662E120DB7B5400E7DD8E /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4662E020DB7B5400E7DD8E /* SettingsTableViewController.swift */; };
+		AF4968791E595A2800278402 /* OutgoingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4968781E595A2800278402 /* OutgoingMessage.swift */; };
+		AF49687B1E595A3D00278402 /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49687A1E595A3D00278402 /* IncomingMessage.swift */; };
+		AF4A3CBA1E4E6E820084A925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4A3CB91E4E6E820084A925 /* AppDelegate.swift */; };
+		AF4A3CBC1E4E6E820084A925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4A3CBB1E4E6E820084A925 /* ViewController.swift */; };
+		AF4A3CBF1E4E6E820084A925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4A3CBD1E4E6E820084A925 /* Main.storyboard */; };
+		AF4A3CC21E4E6E820084A925 /* RGB_Controller.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF4A3CC01E4E6E820084A925 /* RGB_Controller.xcdatamodeld */; };
+		AF4A3CC41E4E6E820084A925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4A3CC31E4E6E820084A925 /* Assets.xcassets */; };
+		AF4A3CC71E4E6E820084A925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4A3CC51E4E6E820084A925 /* LaunchScreen.storyboard */; };
+		AF4A3CD21E4E6E820084A925 /* RGB_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4A3CD11E4E6E820084A925 /* RGB_ControllerTests.swift */; };
+		AF4A3CDD1E4E6E820084A925 /* RGB_ControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4A3CDC1E4E6E820084A925 /* RGB_ControllerUITests.swift */; };
+		AF4D13B720E186D1000D331B /* AppearanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D13B620E186D1000D331B /* AppearanceTableViewController.swift */; };
+		AF5C46AB20D10730007EBDF5 /* ENButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C46AA20D10730007EBDF5 /* ENButton.swift */; };
+		AF5C46AF20D120F3007EBDF5 /* ENColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C46AE20D120F3007EBDF5 /* ENColor.swift */; };
+		AF63D3B920DC54920075B36A /* SettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63D3B820DC54920075B36A /* SettingsNavigationController.swift */; };
+		AF63D3C620DC73780075B36A /* DynamicAppearanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63D3C520DC73780075B36A /* DynamicAppearanceTableViewCell.swift */; };
+		AF66876A228E8DA200172E4D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AF668769228E8DA200172E4D /* Credits.rtf */; };
+		AF66876D228E949900172E4D /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF66876B228E949900172E4D /* WindowController.swift */; };
+		AF66876E228E949900172E4D /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF66876C228E949900172E4D /* WindowController.xib */; };
+		AF668770228E9FF700172E4D /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF66876F228E9FF700172E4D /* Console.swift */; };
+		AF668772228EA3C100172E4D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF668771228EA3C100172E4D /* AboutViewController.swift */; };
+		AF976B622279773200DFFD51 /* USBSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF976B612279773200DFFD51 /* USBSerial.swift */; };
+		AFA7ABD1227AAFDD008D000F /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA7ABC6227AAFDD008D000F /* PTUSBHub.m */; };
+		AFA7ABD2227AAFDD008D000F /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA7ABC6227AAFDD008D000F /* PTUSBHub.m */; };
+		AFA7ABD3227AAFDD008D000F /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA7ABC7227AAFDD008D000F /* PTProtocol.m */; };
+		AFA7ABD4227AAFDD008D000F /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA7ABC7227AAFDD008D000F /* PTProtocol.m */; };
+		AFA7ABD5227AAFDD008D000F /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA7ABCA227AAFDD008D000F /* PTChannel.m */; };
+		AFA7ABD6227AAFDD008D000F /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA7ABCA227AAFDD008D000F /* PTChannel.m */; };
+		AFA7ABD7227AAFDD008D000F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AFA7ABCE227AAFDD008D000F /* LICENSE.txt */; };
+		AFA7ABD8227AAFDD008D000F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AFA7ABCE227AAFDD008D000F /* LICENSE.txt */; };
+		AFB0C67F227FF3AE00A3B2E2 /* PointsAndLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB0C67E227FF3AE00A3B2E2 /* PointsAndLines.swift */; };
+		AFB0C681227FF3ED00A3B2E2 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB0C680227FF3ED00A3B2E2 /* Paths.swift */; };
+		AFB0C684227FF96200A3B2E2 /* Pens.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB0C683227FF96200A3B2E2 /* Pens.swift */; };
+		AFC510B8227A8E9500F35499 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC510B7227A8E9400F35499 /* Helper.swift */; };
+		AFC510B9227A8E9500F35499 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC510B7227A8E9400F35499 /* Helper.swift */; };
+		AFC510BB227A8EC700F35499 /* PTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC510BA227A8EC700F35499 /* PTManager.swift */; };
+		AFC510BC227A8EC700F35499 /* PTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC510BA227A8EC700F35499 /* PTManager.swift */; };
+		AFD50E962281213100D9836E /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD50E952281213100D9836E /* Commands.swift */; };
+		AFD5BEC620D3BBA800711268 /* ProjectColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5BEC520D3BBA800711268 /* ProjectColors.swift */; };
+		AFD5BEC820D4AC0000711268 /* ENAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5BEC720D4AC0000711268 /* ENAnimation.swift */; };
+		AFFBE71F22794DB60017C889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBE71E22794DB60017C889 /* AppDelegate.swift */; };
+		AFFBE72122794DB60017C889 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBE72022794DB60017C889 /* ViewController.swift */; };
+		AFFBE72422794DB60017C889 /* RGB_USB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFFBE72222794DB60017C889 /* RGB_USB.xcdatamodeld */; };
+		AFFBE72622794DB80017C889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFBE72522794DB80017C889 /* Assets.xcassets */; };
+		AFFBE72922794DB80017C889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFBE72722794DB80017C889 /* Main.storyboard */; };
+		AFFBE73522794DB80017C889 /* RGB_USBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBE73422794DB80017C889 /* RGB_USBTests.swift */; };
+		AFFBE74022794DB80017C889 /* RGB_USBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBE73F22794DB80017C889 /* RGB_USBUITests.swift */; };
+		AFFE092C2252920F000FD956 /* ENAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE092B2252920F000FD956 /* ENAppearance.swift */; };
+		AFFE09312252DD36000FD956 /* ENConnectivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE09302252DD36000FD956 /* ENConnectivityButton.swift */; };
+		AFFE09662253DD50000FD956 /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE09652253DD50000FD956 /* BluetoothSerial.swift */; };
+		BA187FB5DFC9069EE511B75F /* libPods-RGB USB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD38C01206B9C38A5455AB6 /* libPods-RGB USB.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF4A3CCE1E4E6E820084A925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF4A3CAE1E4E6E820084A925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF4A3CB51E4E6E820084A925;
+			remoteInfo = "RGB Controller";
+		};
+		AF4A3CD91E4E6E820084A925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF4A3CAE1E4E6E820084A925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF4A3CB51E4E6E820084A925;
+			remoteInfo = "RGB Controller";
+		};
+		AFFBE73122794DB80017C889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF4A3CAE1E4E6E820084A925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFFBE71B22794DB60017C889;
+			remoteInfo = "RGB USB";
+		};
+		AFFBE73C22794DB80017C889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF4A3CAE1E4E6E820084A925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFFBE71B22794DB60017C889;
+			remoteInfo = "RGB USB";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16364F35BE90D9F4680F2022 /* Pods-RGB Controller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGB Controller.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGB Controller/Pods-RGB Controller.release.xcconfig"; sourceTree = "<group>"; };
+		23EBD95429305F2E2C10F37F /* Pods_RGB_Controller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGB_Controller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		519E435335A5E477C1AFCE9A /* Pods-RGB USB.fake server.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGB USB.fake server.xcconfig"; path = "Pods/Target Support Files/Pods-RGB USB/Pods-RGB USB.fake server.xcconfig"; sourceTree = "<group>"; };
+		5AD38C01206B9C38A5455AB6 /* libPods-RGB USB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RGB USB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC7AD137248A8598F954126 /* Pods-RGB USB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGB USB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGB USB/Pods-RGB USB.debug.xcconfig"; sourceTree = "<group>"; };
+		628410D7C5872BC4F630B6AF /* Pods-RGB USB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGB USB.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGB USB/Pods-RGB USB.release.xcconfig"; sourceTree = "<group>"; };
+		73D7A2C43A598AF5623D8A77 /* Pods-RGB Controller.fake server.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGB Controller.fake server.xcconfig"; path = "Pods/Target Support Files/Pods-RGB Controller/Pods-RGB Controller.fake server.xcconfig"; sourceTree = "<group>"; };
+		AF1EEB3C1F5A571700FE3DB2 /* MessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHandler.swift; sourceTree = "<group>"; };
+		AF1EEB3E1F5CD3AD00FE3DB2 /* Outbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outbox.swift; sourceTree = "<group>"; };
+		AF1EEB401F5F33ED00FE3DB2 /* Inbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inbox.swift; sourceTree = "<group>"; };
+		AF2A7A9520DDB1BB00A1EC9B /* UserDefaultsManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagement.swift; sourceTree = "<group>"; };
+		AF2A7A9920DDCF4B00A1EC9B /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		AF4662E020DB7B5400E7DD8E /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		AF4968781E595A2800278402 /* OutgoingMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingMessage.swift; sourceTree = "<group>"; };
+		AF49687A1E595A3D00278402 /* IncomingMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
+		AF4A3CB61E4E6E820084A925 /* Arm Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arm Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4A3CB91E4E6E820084A925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF4A3CBB1E4E6E820084A925 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF4A3CBE1E4E6E820084A925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF4A3CC11E4E6E820084A925 /* RGB_Controller.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RGB_Controller.xcdatamodel; sourceTree = "<group>"; };
+		AF4A3CC31E4E6E820084A925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF4A3CC61E4E6E820084A925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF4A3CC81E4E6E820084A925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4A3CCD1E4E6E820084A925 /* Arm ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arm ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4A3CD11E4E6E820084A925 /* RGB_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB_ControllerTests.swift; sourceTree = "<group>"; };
+		AF4A3CD31E4E6E820084A925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4A3CD81E4E6E820084A925 /* Arm ControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arm ControllerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4A3CDC1E4E6E820084A925 /* RGB_ControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB_ControllerUITests.swift; sourceTree = "<group>"; };
+		AF4A3CDE1E4E6E820084A925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4D13B620E186D1000D331B /* AppearanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceTableViewController.swift; sourceTree = "<group>"; };
+		AF5C46AA20D10730007EBDF5 /* ENButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENButton.swift; sourceTree = "<group>"; };
+		AF5C46AE20D120F3007EBDF5 /* ENColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENColor.swift; sourceTree = "<group>"; };
+		AF63D3B820DC54920075B36A /* SettingsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigationController.swift; sourceTree = "<group>"; };
+		AF63D3C520DC73780075B36A /* DynamicAppearanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicAppearanceTableViewCell.swift; sourceTree = "<group>"; };
+		AF668769228E8DA200172E4D /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		AF66876B228E949900172E4D /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		AF66876C228E949900172E4D /* WindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WindowController.xib; sourceTree = "<group>"; };
+		AF66876F228E9FF700172E4D /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		AF668771228EA3C100172E4D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		AF976B5E227951C200DFFD51 /* Arm USB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Arm USB-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF976B612279773200DFFD51 /* USBSerial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBSerial.swift; sourceTree = "<group>"; };
+		AF976B642279A51300DFFD51 /* RGB USB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RGB USB.entitlements"; sourceTree = "<group>"; };
+		AFA7ABAE227AADA4008D000F /* Arm Controller-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Arm Controller-Bridging-Header.h"; sourceTree = "<group>"; };
+		AFA7ABC6227AAFDD008D000F /* PTUSBHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUSBHub.m; sourceTree = "<group>"; };
+		AFA7ABC7227AAFDD008D000F /* PTProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTProtocol.m; sourceTree = "<group>"; };
+		AFA7ABC8227AAFDD008D000F /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
+		AFA7ABC9227AAFDD008D000F /* Peertalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peertalk.h; sourceTree = "<group>"; };
+		AFA7ABCA227AAFDD008D000F /* PTChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTChannel.m; sourceTree = "<group>"; };
+		AFA7ABCB227AAFDD008D000F /* PTPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPrivate.h; sourceTree = "<group>"; };
+		AFA7ABCC227AAFDD008D000F /* PTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTProtocol.h; sourceTree = "<group>"; };
+		AFA7ABCD227AAFDD008D000F /* PTUSBHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUSBHub.h; sourceTree = "<group>"; };
+		AFA7ABCE227AAFDD008D000F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		AFA7ABCF227AAFDD008D000F /* PTChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTChannel.h; sourceTree = "<group>"; };
+		AFB0C67E227FF3AE00A3B2E2 /* PointsAndLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsAndLines.swift; sourceTree = "<group>"; };
+		AFB0C680227FF3ED00A3B2E2 /* Paths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		AFB0C683227FF96200A3B2E2 /* Pens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pens.swift; sourceTree = "<group>"; };
+		AFBEC22420CF7F89006590B9 /* RGB Controller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RGB Controller.entitlements"; sourceTree = "<group>"; };
+		AFC510B7227A8E9400F35499 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AFC510BA227A8EC700F35499 /* PTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTManager.swift; sourceTree = "<group>"; };
+		AFD50E952281213100D9836E /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
+		AFD5BEC520D3BBA800711268 /* ProjectColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectColors.swift; sourceTree = "<group>"; };
+		AFD5BEC720D4AC0000711268 /* ENAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENAnimation.swift; sourceTree = "<group>"; };
+		AFFBE71C22794DB60017C889 /* Arm USB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arm USB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFBE71E22794DB60017C889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFFBE72022794DB60017C889 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFFBE72322794DB60017C889 /* RGB_USB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RGB_USB.xcdatamodel; sourceTree = "<group>"; };
+		AFFBE72522794DB80017C889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFFBE72822794DB80017C889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFFBE72A22794DB80017C889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFBE72B22794DB80017C889 /* RGB_USB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RGB_USB.entitlements; sourceTree = "<group>"; };
+		AFFBE73022794DB80017C889 /* RGB USBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RGB USBTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFBE73422794DB80017C889 /* RGB_USBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB_USBTests.swift; sourceTree = "<group>"; };
+		AFFBE73622794DB80017C889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFBE73B22794DB80017C889 /* RGB USBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RGB USBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFBE73F22794DB80017C889 /* RGB_USBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB_USBUITests.swift; sourceTree = "<group>"; };
+		AFFBE74122794DB80017C889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFE092B2252920F000FD956 /* ENAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENAppearance.swift; sourceTree = "<group>"; };
+		AFFE09302252DD36000FD956 /* ENConnectivityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENConnectivityButton.swift; sourceTree = "<group>"; };
+		AFFE09652253DD50000FD956 /* BluetoothSerial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; };
+		DBA903DDD3F1CA8F12B0FFDA /* Pods-RGB Controller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGB Controller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGB Controller/Pods-RGB Controller.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF4A3CB31E4E6E820084A925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFD69E3F22950778F4ED36D /* Pods_RGB_Controller.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4A3CCA1E4E6E820084A925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4A3CD51E4E6E820084A925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFBE71922794DB60017C889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA187FB5DFC9069EE511B75F /* libPods-RGB USB.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFBE72D22794DB80017C889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFBE73822794DB80017C889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B5571FD5A8517CC47D9274B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBA903DDD3F1CA8F12B0FFDA /* Pods-RGB Controller.debug.xcconfig */,
+				16364F35BE90D9F4680F2022 /* Pods-RGB Controller.release.xcconfig */,
+				73D7A2C43A598AF5623D8A77 /* Pods-RGB Controller.fake server.xcconfig */,
+				5CC7AD137248A8598F954126 /* Pods-RGB USB.debug.xcconfig */,
+				519E435335A5E477C1AFCE9A /* Pods-RGB USB.fake server.xcconfig */,
+				628410D7C5872BC4F630B6AF /* Pods-RGB USB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5ECBB1033A4B1792E6D5FE3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23EBD95429305F2E2C10F37F /* Pods_RGB_Controller.framework */,
+				5AD38C01206B9C38A5455AB6 /* libPods-RGB USB.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF4A3CAD1E4E6E820084A925 = {
+			isa = PBXGroup;
+			children = (
+				AF4A3CB81E4E6E820084A925 /* Arm Controller */,
+				AF4A3CD01E4E6E820084A925 /* RGB ControllerTests */,
+				AF4A3CDB1E4E6E820084A925 /* RGB ControllerUITests */,
+				AFFBE71D22794DB60017C889 /* Arm USB */,
+				AFFBE73322794DB80017C889 /* RGB USBTests */,
+				AFFBE73E22794DB80017C889 /* RGB USBUITests */,
+				AFA7ABC5227AAFDD008D000F /* peertalk */,
+				AFC510BD227A8ECC00F35499 /* PT-simple */,
+				AF4A3CB71E4E6E820084A925 /* Products */,
+				0B5571FD5A8517CC47D9274B /* Pods */,
+				5ECBB1033A4B1792E6D5FE3D /* Frameworks */,
+				AFA7ABAE227AADA4008D000F /* Arm Controller-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		AF4A3CB71E4E6E820084A925 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF4A3CB61E4E6E820084A925 /* Arm Controller.app */,
+				AF4A3CCD1E4E6E820084A925 /* Arm ControllerTests.xctest */,
+				AF4A3CD81E4E6E820084A925 /* Arm ControllerUITests.xctest */,
+				AFFBE71C22794DB60017C889 /* Arm USB.app */,
+				AFFBE73022794DB80017C889 /* RGB USBTests.xctest */,
+				AFFBE73B22794DB80017C889 /* RGB USBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF4A3CB81E4E6E820084A925 /* Arm Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFBEC22420CF7F89006590B9 /* RGB Controller.entitlements */,
+				AF4A3CB91E4E6E820084A925 /* AppDelegate.swift */,
+				AF2A7A9920DDCF4B00A1EC9B /* LaunchScreenView.swift */,
+				AF4A3CBB1E4E6E820084A925 /* ViewController.swift */,
+				AF63D3BA20DC549D0075B36A /* Settings */,
+				AFD5BEC520D3BBA800711268 /* ProjectColors.swift */,
+				AF2A7A9520DDB1BB00A1EC9B /* UserDefaultsManagement.swift */,
+				AF63D3BC20DC54ED0075B36A /* ENKit */,
+				AFB0C682227FF3F300A3B2E2 /* Drawing */,
+				AF4A3CBD1E4E6E820084A925 /* Main.storyboard */,
+				AF4A3CC51E4E6E820084A925 /* LaunchScreen.storyboard */,
+				AF4A3CC31E4E6E820084A925 /* Assets.xcassets */,
+				AF4A3CC81E4E6E820084A925 /* Info.plist */,
+				AF4A3CC01E4E6E820084A925 /* RGB_Controller.xcdatamodeld */,
+			);
+			path = "Arm Controller";
+			sourceTree = "<group>";
+		};
+		AF4A3CD01E4E6E820084A925 /* RGB ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF4A3CD11E4E6E820084A925 /* RGB_ControllerTests.swift */,
+				AF4A3CD31E4E6E820084A925 /* Info.plist */,
+			);
+			path = "RGB ControllerTests";
+			sourceTree = "<group>";
+		};
+		AF4A3CDB1E4E6E820084A925 /* RGB ControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF4A3CDC1E4E6E820084A925 /* RGB_ControllerUITests.swift */,
+				AF4A3CDE1E4E6E820084A925 /* Info.plist */,
+			);
+			path = "RGB ControllerUITests";
+			sourceTree = "<group>";
+		};
+		AF63D3BA20DC549D0075B36A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AF63D3B820DC54920075B36A /* SettingsNavigationController.swift */,
+				AF4662E020DB7B5400E7DD8E /* SettingsTableViewController.swift */,
+				AF668771228EA3C100172E4D /* AboutViewController.swift */,
+				AF63D3BF20DC56D70075B36A /* Appearance */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AF63D3BC20DC54ED0075B36A /* ENKit */ = {
+			isa = PBXGroup;
+			children = (
+				AFFE092D2252DCDE000FD956 /* ENConnectivity */,
+				AFD5BEC720D4AC0000711268 /* ENAnimation.swift */,
+				AFFE092B2252920F000FD956 /* ENAppearance.swift */,
+				AF5C46AA20D10730007EBDF5 /* ENButton.swift */,
+				AF5C46AE20D120F3007EBDF5 /* ENColor.swift */,
+			);
+			path = ENKit;
+			sourceTree = "<group>";
+		};
+		AF63D3BF20DC56D70075B36A /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				AF4D13B620E186D1000D331B /* AppearanceTableViewController.swift */,
+				AF63D3C520DC73780075B36A /* DynamicAppearanceTableViewCell.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		AFA7ABC5227AAFDD008D000F /* peertalk */ = {
+			isa = PBXGroup;
+			children = (
+				AFA7ABC6227AAFDD008D000F /* PTUSBHub.m */,
+				AFA7ABC7227AAFDD008D000F /* PTProtocol.m */,
+				AFA7ABC8227AAFDD008D000F /* prefix.pch */,
+				AFA7ABC9227AAFDD008D000F /* Peertalk.h */,
+				AFA7ABCF227AAFDD008D000F /* PTChannel.h */,
+				AFA7ABCA227AAFDD008D000F /* PTChannel.m */,
+				AFA7ABCB227AAFDD008D000F /* PTPrivate.h */,
+				AFA7ABCC227AAFDD008D000F /* PTProtocol.h */,
+				AFA7ABCD227AAFDD008D000F /* PTUSBHub.h */,
+				AFA7ABCE227AAFDD008D000F /* LICENSE.txt */,
+			);
+			path = peertalk;
+			sourceTree = "<group>";
+		};
+		AFB0C682227FF3F300A3B2E2 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				AFB0C67E227FF3AE00A3B2E2 /* PointsAndLines.swift */,
+				AFB0C680227FF3ED00A3B2E2 /* Paths.swift */,
+				AFB0C683227FF96200A3B2E2 /* Pens.swift */,
+				AFD50E952281213100D9836E /* Commands.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		AFC510BD227A8ECC00F35499 /* PT-simple */ = {
+			isa = PBXGroup;
+			children = (
+				AFC510B7227A8E9400F35499 /* Helper.swift */,
+				AFC510BA227A8EC700F35499 /* PTManager.swift */,
+			);
+			path = "PT-simple";
+			sourceTree = "<group>";
+		};
+		AFFBE71D22794DB60017C889 /* Arm USB */ = {
+			isa = PBXGroup;
+			children = (
+				AF976B642279A51300DFFD51 /* RGB USB.entitlements */,
+				AFFBE71E22794DB60017C889 /* AppDelegate.swift */,
+				AFFBE72022794DB60017C889 /* ViewController.swift */,
+				AF66876B228E949900172E4D /* WindowController.swift */,
+				AF66876C228E949900172E4D /* WindowController.xib */,
+				AF976B612279773200DFFD51 /* USBSerial.swift */,
+				AF66876F228E9FF700172E4D /* Console.swift */,
+				AF668769228E8DA200172E4D /* Credits.rtf */,
+				AFFBE72522794DB80017C889 /* Assets.xcassets */,
+				AFFBE72722794DB80017C889 /* Main.storyboard */,
+				AFFBE72A22794DB80017C889 /* Info.plist */,
+				AFFBE72B22794DB80017C889 /* RGB_USB.entitlements */,
+				AFFBE72222794DB60017C889 /* RGB_USB.xcdatamodeld */,
+				AF976B5E227951C200DFFD51 /* Arm USB-Bridging-Header.h */,
+			);
+			path = "Arm USB";
+			sourceTree = "<group>";
+		};
+		AFFBE73322794DB80017C889 /* RGB USBTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFFBE73422794DB80017C889 /* RGB_USBTests.swift */,
+				AFFBE73622794DB80017C889 /* Info.plist */,
+			);
+			path = "RGB USBTests";
+			sourceTree = "<group>";
+		};
+		AFFBE73E22794DB80017C889 /* RGB USBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFFBE73F22794DB80017C889 /* RGB_USBUITests.swift */,
+				AFFBE74122794DB80017C889 /* Info.plist */,
+			);
+			path = "RGB USBUITests";
+			sourceTree = "<group>";
+		};
+		AFFE092D2252DCDE000FD956 /* ENConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				AFFE09652253DD50000FD956 /* BluetoothSerial.swift */,
+				AFFE09302252DD36000FD956 /* ENConnectivityButton.swift */,
+				AF1EEB3C1F5A571700FE3DB2 /* MessageHandler.swift */,
+				AF1EEB3E1F5CD3AD00FE3DB2 /* Outbox.swift */,
+				AF1EEB401F5F33ED00FE3DB2 /* Inbox.swift */,
+				AF4968781E595A2800278402 /* OutgoingMessage.swift */,
+				AF49687A1E595A3D00278402 /* IncomingMessage.swift */,
+			);
+			path = ENConnectivity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF4A3CB51E4E6E820084A925 /* Arm Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF4A3CE11E4E6E820084A925 /* Build configuration list for PBXNativeTarget "Arm Controller" */;
+			buildPhases = (
+				58C608C3E8CF64E778130C5D /* [CP] Check Pods Manifest.lock */,
+				AF4A3CB21E4E6E820084A925 /* Sources */,
+				AF4A3CB31E4E6E820084A925 /* Frameworks */,
+				AF4A3CB41E4E6E820084A925 /* Resources */,
+				ED26F0CA33DC3812483CF5D2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arm Controller";
+			productName = "RGB Controller";
+			productReference = AF4A3CB61E4E6E820084A925 /* Arm Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF4A3CCC1E4E6E820084A925 /* Arm ControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF4A3CE41E4E6E820084A925 /* Build configuration list for PBXNativeTarget "Arm ControllerTests" */;
+			buildPhases = (
+				AF4A3CC91E4E6E820084A925 /* Sources */,
+				AF4A3CCA1E4E6E820084A925 /* Frameworks */,
+				AF4A3CCB1E4E6E820084A925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF4A3CCF1E4E6E820084A925 /* PBXTargetDependency */,
+			);
+			name = "Arm ControllerTests";
+			productName = "RGB ControllerTests";
+			productReference = AF4A3CCD1E4E6E820084A925 /* Arm ControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF4A3CD71E4E6E820084A925 /* Arm ControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF4A3CE71E4E6E820084A925 /* Build configuration list for PBXNativeTarget "Arm ControllerUITests" */;
+			buildPhases = (
+				AF4A3CD41E4E6E820084A925 /* Sources */,
+				AF4A3CD51E4E6E820084A925 /* Frameworks */,
+				AF4A3CD61E4E6E820084A925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF4A3CDA1E4E6E820084A925 /* PBXTargetDependency */,
+			);
+			name = "Arm ControllerUITests";
+			productName = "RGB ControllerUITests";
+			productReference = AF4A3CD81E4E6E820084A925 /* Arm ControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AFFBE71B22794DB60017C889 /* Arm USB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFBE74B22794DB80017C889 /* Build configuration list for PBXNativeTarget "Arm USB" */;
+			buildPhases = (
+				4A66C69403BDF3EBC3B53544 /* [CP] Check Pods Manifest.lock */,
+				AFFBE71822794DB60017C889 /* Sources */,
+				AFFBE71922794DB60017C889 /* Frameworks */,
+				AFFBE71A22794DB60017C889 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arm USB";
+			productName = "RGB USB";
+			productReference = AFFBE71C22794DB60017C889 /* Arm USB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFFBE72F22794DB80017C889 /* RGB USBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFBE74C22794DB80017C889 /* Build configuration list for PBXNativeTarget "RGB USBTests" */;
+			buildPhases = (
+				AFFBE72C22794DB80017C889 /* Sources */,
+				AFFBE72D22794DB80017C889 /* Frameworks */,
+				AFFBE72E22794DB80017C889 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFFBE73222794DB80017C889 /* PBXTargetDependency */,
+			);
+			name = "RGB USBTests";
+			productName = "RGB USBTests";
+			productReference = AFFBE73022794DB80017C889 /* RGB USBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFFBE73A22794DB80017C889 /* RGB USBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFBE74D22794DB80017C889 /* Build configuration list for PBXNativeTarget "RGB USBUITests" */;
+			buildPhases = (
+				AFFBE73722794DB80017C889 /* Sources */,
+				AFFBE73822794DB80017C889 /* Frameworks */,
+				AFFBE73922794DB80017C889 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFFBE73D22794DB80017C889 /* PBXTargetDependency */,
+			);
+			name = "RGB USBUITests";
+			productName = "RGB USBUITests";
+			productReference = AFFBE73B22794DB80017C889 /* RGB USBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF4A3CAE1E4E6E820084A925 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Erik Nordlund";
+				TargetAttributes = {
+					AF4A3CB51E4E6E820084A925 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HXWT6M8WG5;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
+					};
+					AF4A3CCC1E4E6E820084A925 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF4A3CB51E4E6E820084A925;
+					};
+					AF4A3CD71E4E6E820084A925 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF4A3CB51E4E6E820084A925;
+					};
+					AFFBE71B22794DB60017C889 = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = HXWT6M8WG5;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					AFFBE72F22794DB80017C889 = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = HXWT6M8WG5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFFBE71B22794DB60017C889;
+					};
+					AFFBE73A22794DB80017C889 = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = HXWT6M8WG5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFFBE71B22794DB60017C889;
+					};
+				};
+			};
+			buildConfigurationList = AF4A3CB11E4E6E820084A925 /* Build configuration list for PBXProject "Arm Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = AF4A3CAD1E4E6E820084A925;
+			productRefGroup = AF4A3CB71E4E6E820084A925 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF4A3CB51E4E6E820084A925 /* Arm Controller */,
+				AF4A3CCC1E4E6E820084A925 /* Arm ControllerTests */,
+				AF4A3CD71E4E6E820084A925 /* Arm ControllerUITests */,
+				AFFBE71B22794DB60017C889 /* Arm USB */,
+				AFFBE72F22794DB80017C889 /* RGB USBTests */,
+				AFFBE73A22794DB80017C889 /* RGB USBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF4A3CB41E4E6E820084A925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA7ABD7227AAFDD008D000F /* LICENSE.txt in Resources */,
+				AF4A3CC71E4E6E820084A925 /* LaunchScreen.storyboard in Resources */,
+				AF4A3CC41E4E6E820084A925 /* Assets.xcassets in Resources */,
+				AF4A3CBF1E4E6E820084A925 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4A3CCB1E4E6E820084A925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4A3CD61E4E6E820084A925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFBE71A22794DB60017C889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA7ABD8227AAFDD008D000F /* LICENSE.txt in Resources */,
+				AFFBE72622794DB80017C889 /* Assets.xcassets in Resources */,
+				AFFBE72922794DB80017C889 /* Main.storyboard in Resources */,
+				AF66876E228E949900172E4D /* WindowController.xib in Resources */,
+				AF66876A228E8DA200172E4D /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFBE72E22794DB80017C889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFBE73922794DB80017C889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A66C69403BDF3EBC3B53544 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RGB USB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58C608C3E8CF64E778130C5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RGB Controller-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED26F0CA33DC3812483CF5D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RGB Controller/Pods-RGB Controller-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RGB Controller/Pods-RGB Controller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF4A3CB21E4E6E820084A925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1EEB3F1F5CD3AD00FE3DB2 /* Outbox.swift in Sources */,
+				AF2A7A9A20DDCF4B00A1EC9B /* LaunchScreenView.swift in Sources */,
+				AF4A3CBC1E4E6E820084A925 /* ViewController.swift in Sources */,
+				AFD50E962281213100D9836E /* Commands.swift in Sources */,
+				AFB0C67F227FF3AE00A3B2E2 /* PointsAndLines.swift in Sources */,
+				AF2A7A9620DDB1BB00A1EC9B /* UserDefaultsManagement.swift in Sources */,
+				AF49687B1E595A3D00278402 /* IncomingMessage.swift in Sources */,
+				AFB0C684227FF96200A3B2E2 /* Pens.swift in Sources */,
+				AF63D3B920DC54920075B36A /* SettingsNavigationController.swift in Sources */,
+				AF5C46AB20D10730007EBDF5 /* ENButton.swift in Sources */,
+				AFC510BB227A8EC700F35499 /* PTManager.swift in Sources */,
+				AFD5BEC620D3BBA800711268 /* ProjectColors.swift in Sources */,
+				AF4D13B720E186D1000D331B /* AppearanceTableViewController.swift in Sources */,
+				AF668772228EA3C100172E4D /* AboutViewController.swift in Sources */,
+				AFFE092C2252920F000FD956 /* ENAppearance.swift in Sources */,
+				AF4662E120DB7B5400E7DD8E /* SettingsTableViewController.swift in Sources */,
+				AF1EEB411F5F33ED00FE3DB2 /* Inbox.swift in Sources */,
+				AFB0C681227FF3ED00A3B2E2 /* Paths.swift in Sources */,
+				AF4A3CC21E4E6E820084A925 /* RGB_Controller.xcdatamodeld in Sources */,
+				AFFE09312252DD36000FD956 /* ENConnectivityButton.swift in Sources */,
+				AF5C46AF20D120F3007EBDF5 /* ENColor.swift in Sources */,
+				AF1EEB3D1F5A571700FE3DB2 /* MessageHandler.swift in Sources */,
+				AF4968791E595A2800278402 /* OutgoingMessage.swift in Sources */,
+				AF63D3C620DC73780075B36A /* DynamicAppearanceTableViewCell.swift in Sources */,
+				AFA7ABD1227AAFDD008D000F /* PTUSBHub.m in Sources */,
+				AFD5BEC820D4AC0000711268 /* ENAnimation.swift in Sources */,
+				AFFE09662253DD50000FD956 /* BluetoothSerial.swift in Sources */,
+				AFA7ABD3227AAFDD008D000F /* PTProtocol.m in Sources */,
+				AFC510B8227A8E9500F35499 /* Helper.swift in Sources */,
+				AFA7ABD5227AAFDD008D000F /* PTChannel.m in Sources */,
+				AF4A3CBA1E4E6E820084A925 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4A3CC91E4E6E820084A925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4A3CD21E4E6E820084A925 /* RGB_ControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4A3CD41E4E6E820084A925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4A3CDD1E4E6E820084A925 /* RGB_ControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFBE71822794DB60017C889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA7ABD2227AAFDD008D000F /* PTUSBHub.m in Sources */,
+				AF66876D228E949900172E4D /* WindowController.swift in Sources */,
+				AF976B622279773200DFFD51 /* USBSerial.swift in Sources */,
+				AFC510BC227A8EC700F35499 /* PTManager.swift in Sources */,
+				AFFBE72122794DB60017C889 /* ViewController.swift in Sources */,
+				AFA7ABD6227AAFDD008D000F /* PTChannel.m in Sources */,
+				AFC510B9227A8E9500F35499 /* Helper.swift in Sources */,
+				AFA7ABD4227AAFDD008D000F /* PTProtocol.m in Sources */,
+				AFFBE71F22794DB60017C889 /* AppDelegate.swift in Sources */,
+				AF668770228E9FF700172E4D /* Console.swift in Sources */,
+				AFFBE72422794DB60017C889 /* RGB_USB.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFBE72C22794DB80017C889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFBE73522794DB80017C889 /* RGB_USBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFBE73722794DB80017C889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFBE74022794DB80017C889 /* RGB_USBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF4A3CCF1E4E6E820084A925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF4A3CB51E4E6E820084A925 /* Arm Controller */;
+			targetProxy = AF4A3CCE1E4E6E820084A925 /* PBXContainerItemProxy */;
+		};
+		AF4A3CDA1E4E6E820084A925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF4A3CB51E4E6E820084A925 /* Arm Controller */;
+			targetProxy = AF4A3CD91E4E6E820084A925 /* PBXContainerItemProxy */;
+		};
+		AFFBE73222794DB80017C889 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFFBE71B22794DB60017C889 /* Arm USB */;
+			targetProxy = AFFBE73122794DB80017C889 /* PBXContainerItemProxy */;
+		};
+		AFFBE73D22794DB80017C889 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFFBE71B22794DB60017C889 /* Arm USB */;
+			targetProxy = AFFBE73C22794DB80017C889 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF4A3CBD1E4E6E820084A925 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF4A3CBE1E4E6E820084A925 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF4A3CC51E4E6E820084A925 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF4A3CC61E4E6E820084A925 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AFFBE72722794DB80017C889 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFFBE72822794DB80017C889 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF4A3CDF1E4E6E820084A925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF4A3CE01E4E6E820084A925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF4A3CE21E4E6E820084A925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA903DDD3F1CA8F12B0FFDA /* Pods-RGB Controller.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Arm Controller/RGB Controller.entitlements";
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Arm Controller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.Arm-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Arm Controller-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		AF4A3CE31E4E6E820084A925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16364F35BE90D9F4680F2022 /* Pods-RGB Controller.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Arm Controller/RGB Controller.entitlements";
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Arm Controller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.Arm-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Arm Controller-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		AF4A3CE51E4E6E820084A925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RGB ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-ControllerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arm Controller.app/Arm Controller";
+			};
+			name = Debug;
+		};
+		AF4A3CE61E4E6E820084A925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RGB ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-ControllerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arm Controller.app/Arm Controller";
+			};
+			name = Release;
+		};
+		AF4A3CE81E4E6E820084A925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "RGB ControllerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-ControllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "RGB Controller";
+			};
+			name = Debug;
+		};
+		AF4A3CE91E4E6E820084A925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "RGB ControllerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-ControllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "RGB Controller";
+			};
+			name = Release;
+		};
+		AF592A9E21C8ABDC002898C3 /* Fake Server */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = FAKESERVER;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Fake Server";
+		};
+		AF592A9F21C8ABDC002898C3 /* Fake Server */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73D7A2C43A598AF5623D8A77 /* Pods-RGB Controller.fake server.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Arm Controller/RGB Controller.entitlements";
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Arm Controller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.Arm-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Arm Controller-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = "Fake Server";
+		};
+		AF592AA021C8ABDC002898C3 /* Fake Server */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RGB ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-ControllerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arm Controller.app/Arm Controller";
+			};
+			name = "Fake Server";
+		};
+		AF592AA121C8ABDC002898C3 /* Fake Server */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "RGB ControllerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-ControllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "RGB Controller";
+			};
+			name = "Fake Server";
+		};
+		AFFBE74222794DB80017C889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC7AD137248A8598F954126 /* Pods-RGB USB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Arm USB/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.Arm-USB";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Arm USB/Arm USB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AFFBE74322794DB80017C889 /* Fake Server */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 519E435335A5E477C1AFCE9A /* Pods-RGB USB.fake server.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Arm USB/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.Arm-USB";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Arm USB/Arm USB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "Fake Server";
+		};
+		AFFBE74422794DB80017C889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628410D7C5872BC4F630B6AF /* Pods-RGB USB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Arm USB/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.Arm-USB";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Arm USB/Arm USB-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AFFBE74522794DB80017C889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RGB USBTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-USBTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RGB USB.app/Contents/MacOS/RGB USB";
+			};
+			name = Debug;
+		};
+		AFFBE74622794DB80017C889 /* Fake Server */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RGB USBTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-USBTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RGB USB.app/Contents/MacOS/RGB USB";
+			};
+			name = "Fake Server";
+		};
+		AFFBE74722794DB80017C889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RGB USBTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-USBTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RGB USB.app/Contents/MacOS/RGB USB";
+			};
+			name = Release;
+		};
+		AFFBE74822794DB80017C889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RGB USBUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-USBUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "RGB USB";
+			};
+			name = Debug;
+		};
+		AFFBE74922794DB80017C889 /* Fake Server */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RGB USBUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-USBUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "RGB USB";
+			};
+			name = "Fake Server";
+		};
+		AFFBE74A22794DB80017C889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HXWT6M8WG5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RGB USBUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eriknordlund.RGB-USBUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "RGB USB";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF4A3CB11E4E6E820084A925 /* Build configuration list for PBXProject "Arm Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4A3CDF1E4E6E820084A925 /* Debug */,
+				AF592A9E21C8ABDC002898C3 /* Fake Server */,
+				AF4A3CE01E4E6E820084A925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF4A3CE11E4E6E820084A925 /* Build configuration list for PBXNativeTarget "Arm Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4A3CE21E4E6E820084A925 /* Debug */,
+				AF592A9F21C8ABDC002898C3 /* Fake Server */,
+				AF4A3CE31E4E6E820084A925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF4A3CE41E4E6E820084A925 /* Build configuration list for PBXNativeTarget "Arm ControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4A3CE51E4E6E820084A925 /* Debug */,
+				AF592AA021C8ABDC002898C3 /* Fake Server */,
+				AF4A3CE61E4E6E820084A925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF4A3CE71E4E6E820084A925 /* Build configuration list for PBXNativeTarget "Arm ControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4A3CE81E4E6E820084A925 /* Debug */,
+				AF592AA121C8ABDC002898C3 /* Fake Server */,
+				AF4A3CE91E4E6E820084A925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFBE74B22794DB80017C889 /* Build configuration list for PBXNativeTarget "Arm USB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFBE74222794DB80017C889 /* Debug */,
+				AFFBE74322794DB80017C889 /* Fake Server */,
+				AFFBE74422794DB80017C889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFBE74C22794DB80017C889 /* Build configuration list for PBXNativeTarget "RGB USBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFBE74522794DB80017C889 /* Debug */,
+				AFFBE74622794DB80017C889 /* Fake Server */,
+				AFFBE74722794DB80017C889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFBE74D22794DB80017C889 /* Build configuration list for PBXNativeTarget "RGB USBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFBE74822794DB80017C889 /* Debug */,
+				AFFBE74922794DB80017C889 /* Fake Server */,
+				AFFBE74A22794DB80017C889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF4A3CC01E4E6E820084A925 /* RGB_Controller.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF4A3CC11E4E6E820084A925 /* RGB_Controller.xcdatamodel */,
+			);
+			currentVersion = AF4A3CC11E4E6E820084A925 /* RGB_Controller.xcdatamodel */;
+			path = RGB_Controller.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		AFFBE72222794DB60017C889 /* RGB_USB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFFBE72322794DB60017C889 /* RGB_USB.xcdatamodel */,
+			);
+			currentVersion = AFFBE72322794DB60017C889 /* RGB_USB.xcdatamodel */;
+			path = RGB_USB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AF4A3CAE1E4E6E820084A925 /* Project object */;
+}
